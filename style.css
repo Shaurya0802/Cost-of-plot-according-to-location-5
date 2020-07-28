@@ -27,6 +27,14 @@ canvas {
     text-align: center;
     display : flex;
     justify-content : space-evenly;
+
+    border-right : 10px ridge #FF0000;
+    border-left : 10px ridge #FF0000;
+
+    border-top : 3px ridge #000028;
+    border-bottom : 3px ridge #000028;
+
+    margin-top:15px;
 }
 
 a:link{
