@@ -2,10 +2,18 @@ var canvas;
 
 var total,total2,total3;
 
+var sound;
+
+function preload(){
+    sound = loadSound("Music.mp3");
+}
+
 function setup(){
     canvas = createCanvas(displayWidth,displayHeight);
 
-    text = createElement('h1');
+    sound.play();
+
+    text = createElement('h2');
 
     text2 = createElement('h3');
     button = createButton("Metro");
@@ -78,7 +86,7 @@ function draw(){
     background("#20B2AA");
 
     text.html("Construction Cost according to location(all calculations are according to 1 sq.ft of land.)(Get knowledge about your House Construction Cost by entering your house area after choosing the location of your house.) ");
-    text.position(displayWidth/2-450,displayHeight/2+125);
+    text.position(displayWidth/2-450,displayHeight/2+155);
     text.style("font-family","Berlin Sans FB");
     text.style("textDecoration","underline");
     text.style("background-color","#e4e4a1");
@@ -310,7 +318,7 @@ function draw(){
         input.position(displayWidth/2,displayHeight/2+1340);
         input.style("font-family","Comic Sans MS");
         input.style("background-color","#cd00cd");
-        input.style("color","#989244");
+        input.style("color","#000000");
 
         button4.position(displayWidth/2-150,displayHeight/2+1370);
         button4.style("font-family","Berlin Sans FB");
@@ -589,7 +597,7 @@ function draw(){
         input.position(displayWidth/2,displayHeight/2+1340);
         input.style("font-family","Comic Sans MS");
         input.style("background-color","#cd00cd");
-        input.style("color","#989244");
+        input.style("color","#000000");
 
         button4.position(displayWidth/2-150,displayHeight/2+1370);
         button4.style("font-family","Berlin Sans FB");
@@ -869,7 +877,7 @@ function draw(){
         input.position(displayWidth/2,displayHeight/2+1340);
         input.style("font-family","Comic Sans MS");
         input.style("background-color","#cd00cd");
-        input.style("color","#989244");
+        input.style("color","#000000");
 
         button4.position(displayWidth/2-150,displayHeight/2+1370);
         button4.style("font-family","Berlin Sans FB");
